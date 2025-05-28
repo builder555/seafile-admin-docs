@@ -91,7 +91,7 @@ This part of configurations is only valid in `CACHE_PROVIDER=memcached`:
 !!! success "Easier to configure S3 for Seafile and its components"
     Since Seafile Pro 13.0, in order to facilitate users to deploy Seafile's related extension components and other services in the future, a section will be provided in `.env` to store the **S3 Configurations** for Seafile and some extension components (such as *SeaSearch*, *Metadata server*). You can locate it with the title bar **\#\#S3**.
     
-    However, please note that Seafile only support configuring S3 in `.env` for **single storage backend mode** (i.e., when `USE_S3_STORAGE=true`), if you would like to use multiple backends, please set `USE_S3_STORAGE=false` in `.env` and refer [here](../setup/setup_with_multiple_storage_backends.md) for the details.
+    Currently, this configuration scheme is only suitable for using a single s3 storage backend. If you plan to use multiple storage backends, or still need to use the old configuration file to configure S3, please remove USE_S3_STORAGE and S3-related environment variables in .env, and refer [here](../setup/setup_with_multiple_storage_backends.md) for the details.
 
 ## SeaSearch
 

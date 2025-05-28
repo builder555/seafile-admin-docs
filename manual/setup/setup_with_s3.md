@@ -24,7 +24,7 @@ status: new
 !!! tip "New feature from 13.0 pro edition"
     If your will deploy Seafile server in Docker, you can specify your S3 configurations in `S3` title bar in `.env` to deploy with S3 together. This operation will generate the same configuration file as this manual. 
     
-    However, please note that Seafile only support configuring S3 in `.env` for **single storage backend mode** (i.e., when `USE_S3_STORAGE=true`), if you would like to use multiple backends, please set `USE_S3_STORAGE=false` in `.env` and refer [here](../setup/setup_with_multiple_storage_backends.md) for the details.
+    Currently, this configuration scheme is only suitable for using a single s3 storage backend. If you plan to use multiple storage backends, or still need to use the old configuration file to configure S3, please remove USE_S3_STORAGE and S3-related environment variables in .env, and refer [here](../setup/setup_with_multiple_storage_backends.md) for the details.
 
 ## How to configure S3 in Seafile
 Seafile configures S3 storage by adding or modifying the following section in `seafile.conf`:
