@@ -442,6 +442,7 @@ LIBRARY_TEMPLATES = {
 ENABLE_CHANGE_PASSWORD = True
 
 # Enable a user with SSO account to change/reset password in 'settings' page. Default to `True`
+# Since version 11.0.4
 ENABLE_SSO_USER_CHANGE_PASSWORD = True
 
 # If show contact email when search user.
